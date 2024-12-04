@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../imgs/fondo.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;  /* Ajustado para un mejor margen */
+}
+
+/* Formulario */
+.card-body {
+  padding: 20px;  /* Añadir un padding consistente */
+}
+
+.form-group label {
+  font-weight: bold;  /* Hacer que las etiquetas sean más visibles */
+}
+
+.form-group select,
+.form-group textarea {
+  border-radius: 5px;  /* Bordes redondeados */
+  border: 1px solid #ccc;  /* Borde gris claro */
+}
+
+.form-group textarea {
+  resize: vertical;  /* Permitir el ajuste vertical del textarea */
+}
+
+/* Vista previa del animal */
+#preview {
+  height: 200px;
+  background-image: url(../imgs/lion.svg);  /* Ícono por defecto */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Botón Agregar */
+#btnRegistrar {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+/* Tabla de Animales */
+#Animales {
+  height: 100%;
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Tarjeta del animal */
+.animal-card {
+  width: 150px;
+  height: 250px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 10px;
+  background-color: #fff;  /* Fondo blanco para mejor contraste */
+}
+
+.animal-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.animal-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.animal-card .btn {
+  width: 100%;  /* Botón ocupa todo el ancho de la tarjeta */
+  padding: 5px;
+}
+
+/* Modal */
+.modal-dialog{
+    max-width: 85% !important;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modal-body h5 {
+  margin-bottom: 10px;
+}
+
+.modal-body p {
+  margin: 5px 0;
+}
+
+/* Ícono de audio */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px; /* Ajusta el padding según sea necesario */
+}
+
+.btn .audio-icon {
+  width: 20px;  /* Ajusta el tamaño según sea necesario */
+  height: 20px; /* Ajusta el tamaño según sea necesario */
+  max-width: 100%;
+  max-height: 100%;
+}
